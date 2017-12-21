@@ -1,7 +1,6 @@
 var React = require('react');
 var uuid = require('node-uuid');
 var moment = require('moment');
-var redux = require('')
 
 var TodoList = require('TodoList');
 var AddTodo = require('AddTodo');
