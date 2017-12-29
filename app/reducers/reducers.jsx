@@ -1,4 +1,4 @@
-var uuid = require('uuid');
+var uuid = require('node-uuid');
 var moment = require('moment');
 
 export var searchTextReducer = (state = '', action) => {
@@ -10,14 +10,13 @@ export var searchTextReducer = (state = '', action) => {
     };
 };
 
-//showCompletedReducer, default false, TOGGLE_SHOW_COMPLETED
 export var showCompletedReducer = (state = false, action) => {
     switch (action.type) {
         case 'TOGGLE_SHOW_COMPLETED':
             return !state;
         default:
             return state;
-    };
+    }
 };
 
 export var todosReducer = (state = [], action) => {
@@ -43,10 +42,11 @@ export var todosReducer = (state = [], action) => {
                         completed: nextCompleted,
                         completedAt: nextCompleted ? moment().unix() : undefined
                     };
+                } else {
+                    return todo;
                 }
             });
         default:
             return state;
-    };
+    }
 };
-
