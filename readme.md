@@ -2,7 +2,7 @@
 
 A simple Todo app — built with [My React Boilerplate](https://github.com/TheBCode/react-boilerplate2017), and [React Redux](https://github.com/reactjs/react-redux)!
 
-***Try the demo*** at http://pacific-gorge-44002.herokuapp.com/
+***Try the demo*** at [React Todo App by Byron Buyck](http://pacific-gorge-44002.herokuapp.com/)
 
 ## Stack
 
